@@ -16,7 +16,7 @@ button, the background color of the screen changes and the name of the new color
 
 ![hex1](https://raw.githubusercontent.com/ARBUCHELI/COLOR-FLIPPER/master/hex1.jpg)
 ![hex2](https://raw.githubusercontent.com/ARBUCHELI/COLOR-FLIPPER/master/hex2.jpg)
-![hex3]()
+![hex3](https://raw.githubusercontent.com/ARBUCHELI/COLOR-FLIPPER/master/hex3.jpg)
 ![hex4]()
 
 ### HEX MODE: The user can see a message (Background color), and the hexadecimal code of the color in a small rectangle.  When the user
