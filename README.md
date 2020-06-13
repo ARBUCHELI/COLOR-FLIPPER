@@ -15,7 +15,7 @@ The App has two options NAME and HEX.
 button, the background color of the screen changes and the name of the new color is displayed in the small rectangle.
 
 ![hex1](https://raw.githubusercontent.com/ARBUCHELI/COLOR-FLIPPER/master/hex1.jpg)
-![hex2]()
+![hex2](https://raw.githubusercontent.com/ARBUCHELI/COLOR-FLIPPER/master/hex2.jpg)
 ![hex3]()
 ![hex4]()
 
