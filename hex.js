@@ -6,8 +6,12 @@ const color = document.querySelector(".color");
 btn.addEventListener('click', function(){
 let hexColor = '#';
 for(let i = 0; i < 6; i++) {
-	hexColor += hex[0] //Here I'm hardcoding, to generate a black color.
+	hexColor += hex[getRandomNumber()] //Here I'm hardcoding, to generate a black color.
 }
 color.textContent = hexColor;
 document.body.style.backgroundColor = hexColor;
 })
+
+function getRandomNumber() {
+	retur Math.floor(Math.random()*hex.length);
+}
