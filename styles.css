@@ -50,9 +50,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  font-family: var(--fontffamily-secondary);
+  background: var(--color-grey-10);
+  color: var(--color-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
