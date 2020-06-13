@@ -28,3 +28,10 @@ clicks the button, the background color of the screen changes and the name of th
 ![name2](https://raw.githubusercontent.com/ARBUCHELI/COLOR-FLIPPER/master/name2.jpg)
 ![name3](https://raw.githubusercontent.com/ARBUCHELI/COLOR-FLIPPER/master/name3.jpg)
 ![name4](https://raw.githubusercontent.com/ARBUCHELI/COLOR-FLIPPER/master/name4.jpg)
+
+### INSTRUCTIONS
+
+1. Donwload and unzip the repository folder.
+2. Open the index.html file in Google Chrome to see the project.
+
+# Author: Andrés R. Bucheli.
