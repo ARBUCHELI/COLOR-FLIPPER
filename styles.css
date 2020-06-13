@@ -34,7 +34,7 @@
   --fontfamily-primary: "Roboto", sans-serif;
   --fontfamily-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
-  --spacing: 0.25rem;
+  --spacing: 0.30rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -50,11 +50,11 @@
   box-sizing: border-box;
 }
 body {
-  font-family: var(--fontffamily-secondary);
+  font-family: var(--fontfamily-secondary);
   background: var(--color-grey-10);
   color: var(--color-grey-1);
   line-height: 1.5;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 ul {
   list-style-type: none;
@@ -75,7 +75,7 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
+  font-family: var(--fontfamily-primary);
 }
 h1 {
   font-size: 3rem;
@@ -91,7 +91,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--color-grey-5);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -116,33 +116,32 @@ p {
     line-height: 1;
   }
 }
-/*  global classes */
 
 .btn {
-  font-family: var(--ff-primary);
+  font-family: var(--fontfamily-primary);
   text-transform: uppercase;
   background: transparent;
-  color: var(--clr-black);
+  color: var(--color-black);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
   transition: var(--transition);
   font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
+  border: 2px solid var(--color-black);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
+  color: var(--color-white);
+  background: var(--color-black);
 }
 .btn-hero {
   font-size: 1rem;
   padding: 0.75rem 1.25rem;
 }
-/* section */
+
 .section {
   padding: 5rem 0;
 }
@@ -157,13 +156,9 @@ p {
     width: 95vw;
   }
 }
-/*
-=============== 
-Nav
-===============
-*/
+
 nav {
-  background: var(--clr-white);
+  background: var(--color-white);
   height: 3rem;
   display: grid;
   align-items: center;
@@ -179,7 +174,7 @@ nav {
 }
 .nav-center h4 {
   margin-bottom: 0;
-  color: var(--clr-primary-5);
+  color: var(--color-primary-5);
 }
 .nav-links {
   display: flex;
@@ -188,18 +183,14 @@ nav a {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 1rem;
-  color: var(--clr-primary-1);
+  color: var(--color-primary-1);
   letter-spacing: var(--spacing);
   margin-right: 1rem;
 }
 nav a:hover {
-  color: var(--clr-primary-5);
+  color: var(--color-primary-5);
 }
-/*
-=============== 
-Container
-===============
-*/
+
 main {
   min-height: calc(100vh - 3rem);
   display: grid;
@@ -209,12 +200,12 @@ main {
   text-align: center;
 }
 .container h2 {
-  background: var(--clr-black);
-  color: var(--clr-white);
+  background: var(--color-black);
+  color: var(--color-white);
   padding: 1rem;
   border-radius: var(--radius);
   margin-bottom: 2.5rem;
 }
 .color {
-  color: var(--clr-primary-5);
+  color: var(--color-primary-5);
 }
