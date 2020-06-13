@@ -22,7 +22,7 @@ button, the background color of the screen changes and the name of the new color
 ### HEX MODE: The user can see a message (Background color), and the hexadecimal code of the color in a small rectangle.  When the user
 clicks the button, the background color of the screen changes and the name of the new color is displayed in the samll rectangle.
 
-![name1]()
+![name1](https://raw.githubusercontent.com/ARBUCHELI/COLOR-FLIPPER/master/name1.jpg)
 ![name2]()
 ![name3]()
 ![name4]()
