@@ -82,4 +82,4 @@ IMPORTANT PART OF THE CODE:
 
 color.textContent = colors[randomNumber];
 
-Here we change the color of the span text inside of the container.
+Here we change the text inside of the container.
