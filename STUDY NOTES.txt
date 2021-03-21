@@ -77,3 +77,9 @@ IMPORTANT PART OF THE CODE:
 document.body.style.backgroundColor = colors[randomNumber];
 
 Here we select the body, the style and backgroundColor to make it equal to an element from the colors array.
+
+IMPORTANT PART OF THE CODE:
+
+color.textContent = colors[randomNumber];
+
+Here we change the color of the span text inside of the container.
