@@ -71,3 +71,9 @@ Both methods have wide browser support. You should opt to use the querySelector 
 using a CSS selector. If you want to select an element by its ID, using getElementById is a good choice.
 
 Now you have the knowledge you need to know when to use the querySelector and getElementById methods like a pro!
+
+IMPORTANT PART OF THE CODE:
+
+document.body.style.backgroundColor = colors[randomNumber];
+
+Here we select the body, the style and backgroundColor to make it equal to an element from the colors array.
