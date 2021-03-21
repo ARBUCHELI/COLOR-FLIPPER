@@ -1,46 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); /*Fonts*/
-:root { /*variables*/
-  /*primary color dark shades*/
-  --color-primary-1: hsl(205, 86%, 17%);
-  --color-primary-2: hsl(205, 77%, 27%);
-  --color-primary-3: hsl(205, 72%, 37%);
-  --color-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --color-primary-5: hsl(205, 78%, 60%);
-  /*primary color lighter shades*/
-  --color-primary-6: hsl(205, 89%, 70%);
-  --color-primary-7: hsl(205, 90%, 76%);
-  --color-primary-8: hsl(205, 86%, 81%);
-  --color-primary-9: hsl(205, 90%, 88%);
-  --color-primary-10: hsl(205, 100%, 96%);
-  /*headings darkest grey */
-  --color-grey-1: hsl(209, 61%, 16%);
-  --color-grey-2: hsl(211, 39%, 23%);
-  --color-grey-3: hsl(209, 34%, 30%);
-  --color-grey-4: hsl(209, 28%, 39%);
-  /*paragraphs grey */
-  --color-grey-5: hsl(210, 22%, 49%);
-  --color-grey-6: hsl(209, 23%, 60%);
-  --color-grey-7: hsl(211, 27%, 70%);
-  --color-grey-8: hsl(210, 31%, 80%);
-  --color-grey-9: hsl(212, 33%, 89%);
-  --color-grey-10: hsl(206, 33%, 96%);
-  --color-white: #fff;
-  --color-red-dark: hsl(360, 67%, 44%);
-  --color-red-light: hsl(360, 71%, 66%);
-  --color-green-dark: hsl(125, 67%, 44%);
-  --color-green-light: hsl(125, 71%, 66%);
-  --color-black: #222;
-  --fontfamily-primary: "Roboto", sans-serif;
-  --fontfamily-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
-  --spacing: 0.30rem;
-  --radius: 0.5rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
-}
 
 *,
 ::after,
@@ -50,9 +8,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: var(--fontfamily-secondary);
-  background: var(--color-grey-10);
-  color: var(--color-grey-1);
+  font-family: "Open Sans", sans-serif;
+  background: hsl(206, 33%, 96%);
+  color: hsl(209, 61%, 16%);
   line-height: 1.5;
   font-size: 1rem;
 }
@@ -62,46 +20,27 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.nav-logo) {
-  width: 100%;
-  display: block;
-}
 
-h1,
 h2,
-h3,
 h4 {
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.30rem;
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--fontfamily-primary);
+  font-family: "Roboto", sans-serif;
 }
-h1 {
-  font-size: 3rem;
-}
+
 h2 {
   font-size: 2rem;
 }
-h3 {
-  font-size: 1.25rem;
-}
+
 h4 {
   font-size: 0.875rem;
 }
-p {
-  margin-bottom: 1.25rem;
-  color: var(--color-grey-5);
-}
+
 @media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
   h2 {
     font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
   }
   h4 {
     font-size: 1rem;
@@ -109,32 +48,30 @@ p {
   body {
     font-size: 1rem;
   }
-  h1,
   h2,
-  h3,
   h4 {
     line-height: 1;
   }
 }
 
 .btn {
-  font-family: var(--fontfamily-primary);
+  font-family: "Open Sans", sans-serif;
   background: transparent;
-  color: var(--color-black);
+  color: #222;
   padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.30rem;
   display: inline-block;
   font-weight: 700;
-  transition: var(--transition);
+  transition: all 0.3s linear;
   font-size: 0.875rem;
-  border: 2px solid var(--color-black);
+  border: 2px solid #222;;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
+  border-radius: 0.5rem;
 }
 .btn:hover {
-  color: var(--color-white);
-  background: var(--color-black);
+  color: #fff;
+  background: #222;;
   text-transform: uppercase;
   font-weight: bolder;
 }
@@ -159,15 +96,15 @@ p {
 }
 
 nav {
-  background: var(--color-white);
+  background: #fff;
   height: 3rem;
   display: grid;
   align-items: center;
-  box-shadow: var(--dark-shadow);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .nav-center {
   width: 90vw;
-  max-width: var(--fixed-width);
+  max-width: 620px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -175,7 +112,7 @@ nav {
 }
 .nav-center h4 {
   margin-bottom: 0;
-  color: var(--color-primary-5);
+  color: hsl(205, 78%, 60%);
 }
 .nav-links {
   display: flex;
@@ -184,12 +121,12 @@ nav a {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 1rem;
-  color: var(--color-primary-1);
-  letter-spacing: var(--spacing);
+  color: hsl(205, 86%, 17%);
+  letter-spacing: 0.30rem;
   margin-right: 1rem;
 }
 nav a:hover {
-  color: var(--color-primary-5);
+  color: hsl(205, 78%, 60%);
 }
 
 main {
@@ -201,12 +138,12 @@ main {
   text-align: center;
 }
 .container h2 {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: #222;;
+  color: #fff;
   padding: 1rem;
-  border-radius: var(--radius);
+  border-radius: 0.5rem;;
   margin-bottom: 2.5rem;
 }
 .color {
-  color: var(--color-primary-5);
+  color:  hsl(205, 78%, 60%);
 }
