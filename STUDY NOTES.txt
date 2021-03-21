@@ -1,4 +1,4 @@
-<strong>JAVASCRIPT:</strong>
+JAVASCRIPT:
 
 document.getElementById()  VS document.querySelector():
 
@@ -72,14 +72,80 @@ using a CSS selector. If you want to select an element by its ID, using getEleme
 
 Now you have the knowledge you need to know when to use the querySelector and getElementById methods like a pro!
 
-IMPORTANT PART OF THE CODE:
+_________________________________________________________________________________________________________________________________________________________________________________
+
+STEP 1:
 
 document.body.style.backgroundColor = colors[randomNumber];
 
 Here we select the body, the style and backgroundColor to make it equal to an element from the colors array.
 
-IMPORTANT PART OF THE CODE:
+_________________________________________________________________________________________________________________________________________________________________________________
+
+STEP 2:
 
 color.textContent = colors[randomNumber];
 
 Here we change the text inside of the container.
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+STEP 3:
+
+We need to create a function to generate a random number:
+
+function getRandomNumber() {
+	return Math.floor(Math.random()*colors.length); /*Because random only generates
+	 numbers between 0 and 1.*/
+	 /*We need Math.floor in order to round the generated numbers to integers*/
+}
+
+And we need to call this function:
+
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
+btn.addEventListener("click", function () {
+	// get a random number between 0 and 3
+	const randomNumber = getRandomNumber(); --------------------------------> Here is where we call the function.
+	document.body.style.backgroundColor = colors[randomNumber];
+	color.textContent = colors[randomNumber];
+});
+
+IMPORTANT:
+
+* Math.random() --> Only  generates numbers between 0 an 1.
+
+* We need to multiply by the length of the array to generate numbers between 0 and the lenght of the array.
+
+* Math.random()*colors.length
+
+* Finally it's necessary to use the method Math.floor to round the number to an integer number.
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+LAST STEP:
+
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]; //This array is going to be used to generate random hex colors
+// #f15025 Format of hex colors -----------------------------> One # symbol and six randomly generated characters (numbers of letters).
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
+
+btn.addEventListener('click', function(){
+let hexColor = '#';
+for(let i = 0; i < 6; i++) {
+	hexColor += hex[getRandomNumber()] -----> This adds # and the six generated characters.
+}
+color.textContent = hexColor;
+document.body.style.backgroundColor = hexColor;
+})
+
+function getRandomNumber() {
+	return Math.floor(Math.random()*hex.length);
+}
+
+
+
+
+
+
+
