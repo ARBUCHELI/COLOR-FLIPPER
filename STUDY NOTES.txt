@@ -1,4 +1,4 @@
-JAVASCRIPT:
+<strong>JAVASCRIPT:</strong>
 
 document.getElementById()  VS document.querySelector():
 
