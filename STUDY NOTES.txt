@@ -1,0 +1,73 @@
+JAVASCRIPT:
+
+document.getElementById()  VS document.querySelector():
+
+Both the querySelector and getElementById methods let you retrieve an element from the JavaScript Document Object Model (DOM). However, each method has its own use cases.
+
+In this guide, we break down the most common use case of both querySelector and getElementById. We also compare these two methods and walk you through a basic example of 
+how each of them work.
+
+What is querySelector?
+The JavaScript querySelector() method lets you retrieve an element from the DOM, or the web page, using a CSS selector. This method comes with a sister function called 
+querySelectorAll() which selects all the elements that match a particular selector from the DOM.
+
+These two methods are incredibly versatile. This is because CSS selector syntax lets you select any element from a web page.
+
+Using querySelector, you don’t have to worry about being constrained by only being allowed to select elements by class or IDs, like you would if you used getElementById 
+or getElementsByClassName.
+
+These methods are particularly useful if the elements you are selecting are similar to those you select in your CSS stylesheet.
+
+Let’s take a look at the querySelector method. We’ll start by writing an HTML element that we can later select in JavaScript:
+
+1
+<p class="accessibility">Skip to main content</p>
+We have defined a paragraph of text with the class name “accessibility”. Next, let’s select this paragraph using the querySelector() method.
+
+1
+const accessibility_elements = document.querySelector(".accessibility");
+This code lets us select the first element whose class is equal to “accessibility”. The “.” denotes that we want to select a class. If we had two elements with the class
+“accessibility”, we could use the querySelectorAll() method to retrieve them both.
+
+What is getElementById?
+The getElementById() method retrieves an element based on its ID attribute, hence the name.
+
+This method is more restrictive than querySelector because you can only retrieve elements based on their particular ID.
+
+You would use this method if you only want to retrieve one element from the web page. This is because HTML IDs must be unique to a particular element. You cannot use an ID 
+to refer to two elements on the web page.
+
+Let’s retrieve an element using the getElementById selector. First, let’s write the HTML code from which we are going to select an element:
+
+1
+<section id="comments">
+2
+    <h2>Comments</h2>
+3
+</section>
+Next, let’s write the JavaScript code to select an element from the DOM:
+
+1
+const comments_section = document.getElementById("comments");
+We use the JavaScript statement to retrieve the element whose ID is equal to “comments”. This is the <section> element where we display comments on our web page.
+
+querySelector vs. getElementById
+The obvious similarity between these two methods is that they both select elements from a web page. They do so in different ways.
+
+With a querySelector statement, you can select an element based on a CSS selector. This means you can select elements by ID, class, or any other type of selector. Using the 
+getElementById method, you can only select an element by its ID.
+
+Generally, you should opt for the selector that most clearly gets the job done.
+
+If you only need to select an element by ID or class, you can use getElementById or getElementsByClassName, respectively. If you need to use a more elaborate rule to select 
+elements, the querySelector method is your best option.
+
+Both querySelector and getElementById have been part of JavaScript for a while. As a result, these methods are both fully supported on modern browsers.
+
+Conclusion
+The querySelector method lets you retrieve an element using a CSS selector query. The getElementById method retrieves an element by its DOM ID.
+
+Both methods have wide browser support. You should opt to use the querySelector method if you need to select elements using more complex rules that are easily represented 
+using a CSS selector. If you want to select an element by its ID, using getElementById is a good choice.
+
+Now you have the knowledge you need to know when to use the querySelector and getElementById methods like a pro!
